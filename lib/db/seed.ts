@@ -2,7 +2,8 @@ import { db } from './index';
 import { users, workspaces, channels, messages } from './schema';
 
 async function seed() {
-  // Add users
+  try {
+    // Add users
   await db.insert(users).values([
     { email: 'alice@example.com', name: 'Alice' },
     { email: 'bob@example.com', name: 'Bob' },
@@ -24,6 +25,9 @@ async function seed() {
   ]);
 
   console.log('Seed data inserted');
+} finally {
+  process.exit(0);
+}
 }
 
 seed().catch(console.error); 
