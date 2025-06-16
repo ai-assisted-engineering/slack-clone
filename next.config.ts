@@ -1,9 +1,13 @@
 import type { NextConfig } from "next";
 
+const isGithubPages = process.env.GITHUB_PAGES === "true";
+const repoName = "slack-clone";
+
 const nextConfig: NextConfig = {
-  /* config options here */
-  output: "export",
-  basePath: "/slack-clone",
+   ...(isGithubPages && {
+    output: "export",
+    basePath: "/" + repoName,
+  }),
 };
 
 export default nextConfig;
