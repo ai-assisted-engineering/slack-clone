@@ -67,7 +67,7 @@
   - **User Instructions**: None
 
 ## Core Layout and Navigation
-- [ ] Step 7: Build main application layout and navigation
+- [x] Step 7: Build main application layout and navigation
   - **Task**: Create the main application layout with sidebar navigation, header, and responsive design patterns similar to Slack's interface
   - **Files**:
     - `components/layout/app-layout.tsx`: Main application layout
