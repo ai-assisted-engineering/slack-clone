@@ -8,6 +8,8 @@ export const users = pgTable('users', {
   created_at: timestamp('created_at').defaultNow(),
 });
 
+export type User = typeof users.$inferSelect;
+
 export const workspaces = pgTable('workspaces', {
   id: serial('id').primaryKey(),
   name: text('name').notNull(),
