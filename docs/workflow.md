@@ -15,9 +15,13 @@ Dies wiederholt ihr so lange, bis ihr mit der Planungsübersicht zufrieden seid,
 
 2. Mit der reinen Planungsübersicht, kann der Cursor-Agent vermutlich noch nicht allzu viel anfangen, weshalb wir in diesen Schritt die Planung, mit Hilfe des 2. Prompts, auf eine Schritt- für Schritt-Anweisung verfeinern. Hierzu fügen wir das Ergebnis aus Prompt 1. in den Platzhalter `{{PROJECT_REQUEST}}` des 2. Prompts ein. Fliegt über das Ergebnis drüber und ermahnt das LLM Fehlern oder Unklarheit, diese auszubessern.
 
-3. 
+TODO: Überarbeiten
 
-## Cursor workflow
+3. Das Resultat aus Schritt zwei sollte ein detaillierter Anweisungsplan sein. Dieser soll vom Cursor-Agent verwendet werden. Falls noch nicht geschehen, lasse dir den Plan als .md Datei ausgeben. Diese kannst du dann in der obersten Projektstruktur als Datei `project-steps.md` anlegen. Diese Datei ist in der general.mdc cursor rules verlinkt. 
+
+## TBD Cursor workflow 
+
+
 
 TODO:
 - Cursor soll den Plan Schritt für Schritt ausführen.

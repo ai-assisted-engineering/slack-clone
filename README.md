@@ -10,7 +10,8 @@ Schnell wachsenden Start-Ups basieren heutzutage meist auf die Entwicklung kompl
 
 Deshalb reisen wir in die Vergangenheit, genauer an den Anfang der 2000er Jahre. Technologien aus der heutigen Zeit nehmen wir natürlich mit auf unsere Reise. Cursor soll dabei euer größter Wettbewerbsvorteil sein - ein KI-Entwicklungspartner, den die damalige Konkurrenz nicht hatte.
 
-Eure Aufgabe: Agentic Coding in der Praxis
+## Aufgabe - Agentic Coding in der Praxis
+
 Mit Hilfe von Cursor sollt ihr eine funktionsfähige Single-Page-Application entwickeln. Der Fokus liegt dabei auf dem Agentic Coding - der Zusammenarbeit zwischen Mensch und KI bei der Softwareentwicklung.
 
 Mögliche Projekte aus der frühen 2000er-Ära:
@@ -29,11 +30,16 @@ Content & Media:
 
 Bei den gelisteten Projekten handelt es sich nur um mögliche Vorschläge, an die ihr nicht gebunden seid. Tobt euch gerne aus und stürzt euch auf eure eigenen Ideen - Hauptsache, ihr gebt euch dem Vibe-Coding-Mantra hin und verwendet überwiegend Cursor als euren KI-Entwicklungspartner.
 
-### Ablauf
+## Hinweise
+
+- Beschränkt euch 2-3 Kernkonzepte
+- 
+
+### Ablauf (TODO: Den Ablauf schöner gestaltetn / umschreiben)
 
 1. Projekt-Setup mit KI [~ 15 min]
     - Wählt euer Ziel-Konzept aus der 2000er-Ära
-    - Nutzt Langdock, um die Grundstruktur eures Projektes zu generieren. Verwendet hierzu gerne die Vorgehensweise die ich verwendet habe (TODO: Siehe Verlinkung). Falls ihr bereits eine eigene Vorgehensweise entwickelt habt, dann nutzt diese - wir sind gespannt auf eure Erfahrungen
+    - Nutzt Langdock, um die Grundstruktur eures Projektes zu generieren. [Verwendet hierzu gerne die Vorgehensweise die ich verwendet habe](/docs/workflow.md#projekt-setup-mit-langdock) (TODO: Siehe Verlinkung). Falls ihr bereits eine eigene Vorgehensweise entwickelt habt, dann nutzt diese - wir sind gespannt auf eure Erfahrungen
     - Lasst die KI eine initiale Architektur vorschlagen, dass Konzept ausarbeiten und eine Schritt für Schritt-Anleitung generieren.
 2. Iterative Entwicklung mit Cursor [~ 90 min]
     - Implementiert 2-3 Kernfunktionen eurer Anwendung
@@ -58,7 +64,7 @@ From here on out, everything is written in English to ensure universal accessibi
 
 ```
 
-.cursor/rules -> This folder holds the projects rules, used by the agent to improve its workflow. You specify what needs äto be done and how exectly id should achieve its goals.
+.cursor/rules -> This folder holds the projects rules, used by the agent to improve its workflow. You specify what needs to be done and how exectly id should achieve its goals.
 
 ```
 
