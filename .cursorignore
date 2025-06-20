@@ -1,2 +1,5 @@
 README.md
 docs/
+node_modules/
+.next/
+.vercel/
