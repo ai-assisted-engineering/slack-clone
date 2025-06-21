@@ -33,4 +33,14 @@ export async function decrementCounter() : Promise<Counter> {
     .where(eq(counters.id, counter.id))
     .returning()
   return updated
+}
+
+export async function updateCounterByAmount(amount: number) {
+  const counter = await getCounter()
+  const [updated] = await db
+    .update(counters)
+    .set({ value: counter.value + amount, updatedAt: new Date() })
+    .where(eq(counters.id, counter.id))
+    .returning()
+  return updated
 } 
