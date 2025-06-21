@@ -4,7 +4,7 @@
 
 ## Projekt-Setup mit Langdock
 
-Wir wollen so wenig Zeit wie möglich auf die Planung und Instruktion des Projektes verwenden. Deshalb findet ihr hier ein vorgehen, welches ich verwendet habe um einen Slack-Prototypen in kürzester Zeit zu bauen.
+Wir wollen so wenig Zeit wie möglich auf die Planung und Instruktion des Projektes verwenden. Deshalb findet ihr hier ein vorgehen, welches ich verwendet habe.
 Für die initiale Planung verwenden wir Langdock, da die kostenlose Version von Cursor nur eine begrenzte Anzahl von Anfragen erlaubt; diese wollen wir vollumfänglich für das Agentic-Coding aufbrauchen.
 
 1. Im ersten Schritt fasst ihr in 3-4 Sätzen kurz zusammen, was für ein Projekt ihr implementieren wollt, und fügt diese in den Platzhalter `{{IDEA}}` des [Concept Prompts](/docs/prompt_templates/concept_prompt.md) ein. Der Prompt instruiert das LLM, mit dessen Hilfe einen groben Plan aufzustellen, was für Aufgaben erledigt werden müssen und welche Technologien zum Einsatz kommen sollen. Im besten Fall stellt euch das LLM Rückfragen zu offenen/unklaren Punkten um die Planung zu präzisieren.
