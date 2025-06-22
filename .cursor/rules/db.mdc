@@ -1,0 +1,6 @@
+---
+description: 
+globs: db/**
+alwaysApply: false
+---
+If you want to use tables using drizzle use the teamSchema variable from [teamSchema.ts](mdc:db/teamSchema.ts) to do so. 

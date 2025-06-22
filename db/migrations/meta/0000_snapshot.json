@@ -1,12 +1,12 @@
 {
-  "id": "4f625040-1c05-43db-bd23-385b0de0d7e6",
+  "id": "2c5303a9-f22f-433e-b035-90f2d5209960",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
-    "public.counters": {
+    "team-erde.counters": {
       "name": "counters",
-      "schema": "",
+      "schema": "team-erde",
       "columns": {
         "id": {
           "name": "id",
