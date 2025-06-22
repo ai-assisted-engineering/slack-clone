@@ -38,6 +38,7 @@ Bei den gelisteten Projekten handelt es sich nur um mögliche Vorschläge, an di
 ### Ablauf (TODO: Den Ablauf schöner gestaltetn / umschreiben)
 
 1. Projekt-Setup mit KI [~ 15 min]
+    - Für die SPA verwenden wir unteranderem Node.js. Eine Installationsanleitung findet ihr hier: [Download Node.js](https://nodejs.org/en/download) 
     - Wählt euer Ziel-Konzept aus der 2000er-Ära
     - Nutzt Langdock, um die Grundstruktur eures Projektes zu generieren. [Verwendet hierzu gerne die Vorgehensweise die ich verwendet habe](/docs/workflow.md#projekt-setup-mit-langdock) (TODO: Siehe Verlinkung). Falls ihr bereits eine eigene Vorgehensweise entwickelt habt, dann nutzt diese - wir sind gespannt auf eure Erfahrungen
     - Lasst die KI eine initiale Architektur vorschlagen, dass Konzept ausarbeiten und eine Schritt für Schritt-Anleitung generieren.
@@ -73,8 +74,10 @@ From here on out, everything is written in English to ensure universal accessibi
 The cursor rules are used to guide the agent to use the correct tools and workflows. Each rule is a file in the .cursor/rules folder. When a rule is applied, its contents are included at the start of the model context (prompt). 
 Thus, it is essential to keep the rules concise and to the point. This can be achieved by routing the rules based on the type of action / task the agent is performing. 
 
+## Infrastructure
 
-
+- Zur Persistierung von Daten wird [Supabase](https://supabase.com/), eine Postgres-Entwickler-Plattform, verwendet
+- Gehosted wird eure jeweilige Webseite in [Vercel](https://vercel.com/).
 
 ## Default Readme
 
