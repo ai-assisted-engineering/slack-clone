@@ -55,24 +55,6 @@ Bei den gelisteten Projekten handelt es sich nur um mögliche Vorschläge, an di
     - Reflektiert über die Agentic Coding-Erfahrung: Was hat die KI gut gemacht? Wo wart ihr als Entwickler unverzichtbar?
 
 
-## Technologies
-
-TODO: Add technologies set up to be used in this project.
-
-## Structure
-From here on out, everything is written in English to ensure universal accessibility.
-
-
-```
-
-.cursor/rules -> This folder holds the projects rules, used by the agent to improve its workflow. You specify what needs to be done and how exectly id should achieve its goals.
-
-```
-
-## [Cursor Rules](https://docs.cursor.com/context/rules)
-
-The cursor rules are used to guide the agent to use the correct tools and workflows. Each rule is a file in the .cursor/rules folder. When a rule is applied, its contents are included at the start of the model context (prompt). 
-Thus, it is essential to keep the rules concise and to the point. This can be achieved by routing the rules based on the type of action / task the agent is performing. 
 
 ## Infrastructure
 
@@ -82,6 +64,11 @@ Thus, it is essential to keep the rules concise and to the point. This can be ac
 ## Default Readme
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## [Cursor Rules](https://docs.cursor.com/context/rules)
+
+The cursor rules are used to guide the agent to use the correct tools and workflows. Each rule is a file in the .cursor/rules folder. When a rule is applied, its contents are included at the start of the model context (prompt). 
+Thus, it is essential to keep the rules concise and to the point. This can be achieved by routing the rules based on the type of action / task the agent is performing. 
 
 ## Getting Started
 
