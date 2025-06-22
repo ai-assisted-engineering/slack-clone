@@ -1,12 +1,12 @@
 {
-  "id": "2c5303a9-f22f-433e-b035-90f2d5209960",
+  "id": "3773c232-d70a-45a6-ad28-88403658d949",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
-    "team-erde.counters": {
+    "test.counters": {
       "name": "counters",
-      "schema": "team-erde",
+      "schema": "test",
       "columns": {
         "id": {
           "name": "id",
