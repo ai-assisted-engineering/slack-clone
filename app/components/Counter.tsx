@@ -11,7 +11,6 @@ let scanState = 0;
 export default function Counter() {
 
   const [value, setValue] = useState(0); // UI value
-  const [persisted, setPersisted] = useState(0); // Last persisted value
   const change$ = useRef(new Subject<number>()).current
   const resetScan$ = new Subject<void>()
 
@@ -24,7 +23,7 @@ export default function Counter() {
   useEffect(() => {
     const loadCounter = async () => {
       const counter = await getCounter()
-      setPersisted(counter.value)
+      setValue(counter.value)
       setIsInitialized(true)
     }
     loadCounter()
