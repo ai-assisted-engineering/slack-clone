@@ -1,8 +1,8 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
-import { Plus, Minus } from 'lucide-react'
-import { Subject, debounceTime, filter, tap, reduce, map, merge, fromEvent, count, scan, startWith } from 'rxjs'
+import { Minus, Plus } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
+import { Subject, debounceTime, scan } from 'rxjs'
 import { getCounter, updateCounterByAmount } from '../actions'
 
 const DEBOUNCE_MS = 1000
@@ -11,14 +11,11 @@ let scanState = 0;
 export default function Counter() {
 
   const [value, setValue] = useState(0); // UI value
-  const change$ = useRef(new Subject<number>()).current
-  const resetScan$ = new Subject<void>()
+  const counterChange$ = useRef(new Subject<number>()).current
 
   const [loading, setLoading] = useState(false)
   const [isInitialized, setIsInitialized] = useState(false)
   
-  // Create a subject for handling counter changes
-  const counterChanges$ = useRef(new Subject<number>())
 
   useEffect(() => {
     const loadCounter = async () => {
@@ -31,7 +28,7 @@ export default function Counter() {
 
   useEffect(() => {
     // Subscribe to counter changes with debouncing and accumulation
-    const subscription = change$
+    const subscription = counterChange$
     .pipe(
       scan((acc, curr) => acc + curr, scanState), // accumulate changes
       debounceTime(DEBOUNCE_MS) // wait for inactivity
@@ -56,9 +53,8 @@ export default function Counter() {
   }, [])
 
   const handleChange = (delta: number) => {
-    //setPersisted((v) => v + delta);
     setValue((v) => v + delta);
-    change$.next(delta);
+    counterChange$.next(delta);
   };
 
 
